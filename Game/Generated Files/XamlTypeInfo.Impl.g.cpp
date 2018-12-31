@@ -33,7 +33,6 @@ namespace Game
             }
         };
     }
-    
 }
 
 [::Windows::Foundation::Metadata::DefaultOverload]
@@ -61,7 +60,6 @@ Platform::Array<::Windows::UI::Xaml::Markup::XmlnsDefinition>^ ::Game::Game_Xaml
     return _provider;
 }
 
-// XamlTypeInfoProvider
 ::Windows::UI::Xaml::Markup::IXamlType^ ::XamlTypeInfo::InfoProvider::XamlTypeInfoProvider::GetXamlTypeByType(::Windows::UI::Xaml::Interop::TypeName type)
 {
     auto xamlType = GetXamlTypeByName(type.Name);
@@ -87,6 +85,7 @@ Platform::Array<::Windows::UI::Xaml::Markup::XmlnsDefinition>^ ::Game::Game_Xaml
         return nullptr;
     }
 
+    auto lock = _xamlTypesCriticalSection.Lock();
     auto val = _xamlTypes.find(typeName);
     ::Windows::UI::Xaml::Markup::IXamlType^ xamlType = nullptr;
     if (val != _xamlTypes.end())
@@ -128,6 +127,7 @@ Platform::Array<::Windows::UI::Xaml::Markup::XmlnsDefinition>^ ::Game::Game_Xaml
         return nullptr;
     }
 
+    auto lock = _xamlMembersCriticalSection.Lock();
     auto val = _xamlMembers.find(longMemberName);
     if (val != _xamlMembers.end())
     {
@@ -135,7 +135,6 @@ Platform::Array<::Windows::UI::Xaml::Markup::XmlnsDefinition>^ ::Game::Game_Xaml
     }
 
     auto xamlMember = CreateXamlMember(longMemberName);
-
     if (xamlMember != nullptr)
     {
         _xamlMembers[longMemberName] = xamlMember;
