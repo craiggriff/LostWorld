@@ -1,0 +1,2 @@
+xcopy C:\Users\craig\Desktop\NewProjectWorks\Game\Assets\LevelBinary\*.* C:\Users\craig\AppData\Local\Packages\33657CSoft.PlatformTerstEngine_kbt70tbq1t6dg\LocalState\LevelBinary\*.*
+xcopy C:\Users\craig\Desktop\NewProjectWorks\Game\Assets\*.* C:\Users\craig\AppData\Local\Packages\33657CSoft.PlatformTerstEngine_kbt70tbq1t6dg\LocalState\*.*

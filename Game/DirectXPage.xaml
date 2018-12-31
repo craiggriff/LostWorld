@@ -1,0 +1,336 @@
+﻿<Page
+    x:Class="Game.DirectXPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Game"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"  >
+
+    <VisualStateManager.VisualStateGroups>
+        <VisualStateGroup>
+            <VisualState>
+                <VisualState.Setters>
+                    <Setter Target="NavPaneDivider.Visibility" Value="collapsed"/>
+                </VisualState.Setters>
+            </VisualState>
+        </VisualStateGroup>
+    </VisualStateManager.VisualStateGroups>
+    <SwapChainPanel x:Name="swapChainPanel">
+
+        <StackPanel Orientation="Vertical">
+            <Grid HorizontalAlignment="left" Height="80" VerticalAlignment="top" Width="132" >
+                <StackPanel Orientation="Horizontal">
+                    <Image x:Name="button_menu" HorizontalAlignment="Right" Height="60" VerticalAlignment="Top" Width="60" Source="Assets/menu_lines.png" Opacity="0.2" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PointerPressed="button_menu_PointerPressed" >
+
+                    </Image>
+                    <TextBlock x:Name="level" Text=""
+                                   HorizontalAlignment="Left"
+                                   VerticalAlignment="top"
+                                   FontSize="25" Foreground="White"  Width="40" Margin="0,0,0,0"/>
+                </StackPanel>
+            </Grid>
+            <Grid HorizontalAlignment="left" Height="80" VerticalAlignment="top" Width="132" >
+                <StackPanel Orientation="Vertical" Margin="0,0,0,-263">
+                    <TextBlock x:Name="fps" Text="fps"
+                                   HorizontalAlignment="Left"
+                                   VerticalAlignment="top"
+                                   FontSize="15" Foreground="White"  Width="120" Margin="0,0,0,0"/>
+                    <TextBlock x:Name="timer" Text="timer"
+                                   HorizontalAlignment="Left"
+                                   VerticalAlignment="top"
+                                   FontSize="15" Foreground="White"  Width="120" Margin="0,0,0,0"/>
+                    <TextBlock Foreground="Green" Height="306">
+                        <Run Text="Keys:"/>
+                        <LineBreak/>
+                        <Run Text="w "/>
+                        <Run Text="- forwards"/>
+                        <LineBreak/>
+                        <Run Text="s - backwards"/>
+                        <LineBreak/>
+                        <Run Text="a - left"/>
+                        <LineBreak/>
+                        <Run Text="d - right"/>
+                        <LineBreak/>
+                        <Run Text="r - respot on land"/>
+                        <LineBreak/>
+                        <Run Text="p - mikey mode"/>
+                        <LineBreak/>
+                        <Run Text="shift - jump"/>
+                        <LineBreak/>
+                        <Run Text="keys 1 - 10 are stages"/>
+                        <LineBreak/>
+                        <Run/>
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+
+        <Grid Name="left_buttons" HorizontalAlignment="left" Height="320" VerticalAlignment="bottom" Width="70" >
+
+            <Image x:Name="button_up" HorizontalAlignment="Left" Height="180" VerticalAlignment="Center" Width="70" Source="Assets/arow_long.png" Opacity="0.2" RenderTransformOrigin="0.5,0.5" PointerEntered="button_up_PointerPressed" PointerExited="button_up_PointerReleased" PointerMoved="button_up_PointerMoved">
+
+            </Image>
+            <Image x:Name="button_down" HorizontalAlignment="Left" Height="70"  VerticalAlignment="bottom" Width="70" Source="Assets/arow.png" Opacity="0.2" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PointerEntered="button_down_PointerPressed" PointerExited="button_down_PointerReleased" >
+                <Image.RenderTransform>
+                    <CompositeTransform Rotation="90"/>
+                </Image.RenderTransform>
+            </Image>
+        </Grid>
+
+        <Grid Name="right_buttons" HorizontalAlignment="Right" Height="185" VerticalAlignment="bottom" Width="185" Visibility="Visible">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="50*"/>
+            </Grid.ColumnDefinitions>
+            <Image Visibility="Collapsed" x:Name="button_right" HorizontalAlignment="Right" Height="70" VerticalAlignment="Bottom" Width="70" Source="Assets/arow.png" Opacity="0.2" PointerEntered="button_right_PointerPressed" PointerExited="button_right_PointerReleased" Grid.Column="1"/>
+            <Image Visibility="Collapsed" x:Name="button_left" HorizontalAlignment="Left" Height="70" VerticalAlignment="Bottom" Width="70" Source="Assets/arow.png" Opacity="0.2" RenderTransformOrigin="0.5,0.5" PointerEntered="button_left_PointerPressed" PointerExited="button_left_PointerReleased"  Grid.ColumnSpan="2" >
+                <Image.RenderTransform>
+                    <CompositeTransform Rotation="180"/>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="button_carsteer" HorizontalAlignment="Right" Height="70" VerticalAlignment="bottom" Width="185" Source="Assets/arow_rotate.png" Opacity="0.2" PointerEntered="button_carsteer_PointerPressed" PointerExited="button_carsteer_PointerReleased" PointerMoved="button_carsteer_PointerMove" Grid.ColumnSpan="2" />
+
+            <Image x:Name="button_grab" HorizontalAlignment="Right" Height="70" VerticalAlignment="Top" Width="70" Source="Assets/arow.png" Opacity="0.2" PointerEntered="button_grab_PointerPressed" PointerExited="button_grab_PointerReleased" Grid.Column="1" />
+
+        </Grid>
+
+
+        <Grid Name="char_left_buttons" HorizontalAlignment="left" Height="180" VerticalAlignment="bottom" Width="180" >
+
+            <Image x:Name="move_pad" HorizontalAlignment="Left" Height="180" VerticalAlignment="Center" Width="180" Source="Assets/arow_big.png" Opacity="0.2" RenderTransformOrigin="0.5,0.5" PointerEntered="button_move_PointerPressed" PointerExited="button_move_PointerReleased" PointerMoved="button_move_PointerMoved"></Image>
+
+        </Grid>
+
+        <Grid Name="char_right_buttons" HorizontalAlignment="Right" Height="70" VerticalAlignment="bottom" Width="185" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="50*"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="attack_grab" HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="70" Source="Assets/arow.png" Opacity="0.2" PointerEntered="attack_grab_PointerPressed" PointerExited="attackn_grab_PointerReleased"  Grid.Column="1"/>
+            <Image x:Name="button_jump" HorizontalAlignment="Right" Height="70" VerticalAlignment="Top" Width="70" Source="Assets/arow.png" Opacity="0.2" PointerEntered="button_jump_PointerPressed" PointerExited="button_jump_PointerReleased" Grid.Column="1" />
+            <!--<Image x:Name="button_rotate" HorizontalAlignment="Right" Height="70" VerticalAlignment="bottom" Width="185" Source="Assets/arow_rotate.png" Opacity="0.2" PointerEntered="button_rotate_PointerPressed" PointerExited="button_rotate_PointerReleased" PointerMoved="button_rotate_PointerMove" Grid.Column="1" />-->
+        </Grid>
+
+
+
+        <Grid Name="game_hud" Visibility="Visible">
+            <Viewbox Name="total_box" Grid.Column="0" Stretch="Uniform" Margin="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed" PointerPressed="button_right_PointerReleased">
+                <TextBlock   Name="dice_total" Text="25"  TextAlignment="Center" Margin="2,2,2,2" Opacity="0.9" FontWeight="Bold" Foreground="SteelBlue" Height="21" />
+            </Viewbox>
+            <Grid HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="200" Width="178"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="19*"/>
+                    <RowDefinition Height="6*"/>
+                </Grid.RowDefinitions>
+                <!--
+                <Grid Name="right_buttons" HorizontalAlignment="Right" Height="200" VerticalAlignment="bottom" Width="153">
+                    <Image x:Name="button_right" HorizontalAlignment="Right" Height="100" VerticalAlignment="Bottom" Width="70" Source="Assets/arow.png" Opacity="0.2" PointerEntered="button_right_PointerReleased"/>
+                </Grid>-->
+            </Grid>
+        </Grid>
+
+        <Grid Name="game_right_buttons" Visibility="Visible" Margin="10,10,-10,-10">
+            <Image x:Name="in_car" HorizontalAlignment="Right" Height="60" VerticalAlignment="Top" Width="60" Source="Assets/menu_lines.png" Opacity="0.2" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PointerPressed="in_car_PointerPressed" >
+
+            </Image>
+        </Grid>
+
+
+        <Grid Name="right_editor">
+            <StackPanel Orientation="Horizontal" Name="right_selector" HorizontalAlignment="Right" Height="30" VerticalAlignment="Top" Width="300" Visibility="Visible">
+
+                <Button Content="Obs" Click="Button_Click"  Foreground="AliceBlue" />
+                <Button Content="Cols" Click="Button_Click_1" Foreground="AliceBlue" />
+                <!--
+            <Button Content="Obs"/>
+            <Button Content="Obs"/>
+            <Button Content="Obs"/>-->
+            </StackPanel>
+
+            <Grid Name="right_cols" HorizontalAlignment="Right" Height="883" VerticalAlignment="Top" Width="300" Margin="0,30" Visibility="Collapsed">
+                <StackPanel HorizontalAlignment="left" Width="300" Background="#66443333">
+                    <TextBlock Text="Ambient RGB" Foreground="AliceBlue" FontSize="12"/>
+                    <Slider Name="sambr" LargeChange="1" Maximum="256" Minimum="0" ValueChanged="sambr_ValueChanged" />
+                    <Slider Name="sambg" LargeChange="1" Maximum="256" Minimum="0" ValueChanged="sambg_ValueChanged" />
+                    <Slider Name="sambb" LargeChange="1" Maximum="256" Minimum="0" ValueChanged="sambb_ValueChanged" />
+                    <TextBlock Text="Diffuse RGB" Foreground="AliceBlue" FontSize="12"/>
+                    <Slider Name="sdiffr" LargeChange="1" Maximum="256" Minimum="0" ValueChanged="sdiffr_ValueChanged" />
+                    <Slider Name="sdiffg" LargeChange="1" Maximum="256" Minimum="0" ValueChanged="sdiffg_ValueChanged" />
+                    <Slider Name="sdiffb" LargeChange="1" Maximum="256" Minimum="0" ValueChanged="sdiffb_ValueChanged" />
+                    <TextBlock Text="Diffuse XYZ" Foreground="AliceBlue" FontSize="12"/>
+                    <Slider Name="sdiffx" LargeChange="1" Maximum="256" Minimum="0" ValueChanged="sdiffx_ValueChanged" />
+                    <Slider Name="sdiffy" LargeChange="1" Maximum="256" Minimum="0" ValueChanged="sdiffy_ValueChanged" />
+                    <Slider Name="sdiffz" LargeChange="1" Maximum="256" Minimum="0" ValueChanged="sdiffz_ValueChanged" />
+                    <TextBlock Text="Specular RGB" Foreground="AliceBlue" FontSize="12"/>
+                    <Slider Name="sspecr" LargeChange="1" Maximum="256" Minimum="0" ValueChanged="sspecr_ValueChanged" />
+                    <Slider Name="sspecg" LargeChange="1" Maximum="256" Minimum="0" ValueChanged="sspecg_ValueChanged" />
+                    <Slider Name="sspecb" LargeChange="1" Maximum="256" Minimum="0" ValueChanged="sspecb_ValueChanged" />
+                    <TextBlock Text="Specular Power" Foreground="AliceBlue" FontSize="12"/>
+                    <Slider Name="sspecpow" LargeChange="1" Maximum="100" Minimum="0" ValueChanged="sspecpow_ValueChanged" />
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button Content="Reset" Click="col_reset_click"/>
+                        <Grid Width="10"/>
+                        <Button Content="Save" Click="col_save_click"/>
+
+
+                    </StackPanel>
+
+                </StackPanel>
+            </Grid>
+            <Grid Name="right_chooser" HorizontalAlignment="Right" Height="883" VerticalAlignment="Top" Width="300" Margin="0,30" Visibility="Visible">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel HorizontalAlignment="left" Width="75" Background="#77333333">
+
+                        <TextBlock Text="CX:" Name="cx" Foreground="LightPink"/>
+                        <TextBlock Text="CZ:" Name="cz" Foreground="LightPink"/>
+                        <TextBlock Text="CA:" Name="ca" Foreground="LightPink"/>
+
+
+                        <Slider x:Name="tval1" LargeChange="1" Maximum="100" Minimum="0" ValueChanged="tval1_ValueChanged" />
+                        <Slider x:Name="tval2" LargeChange="1" Maximum="100" Minimum="0" ValueChanged="tval2_ValueChanged" />
+                        <Slider x:Name="tval3" LargeChange="1" Maximum="100" Minimum="0" ValueChanged="tval3_ValueChanged" />
+                        <Slider x:Name="tval4" LargeChange="1" Maximum="100" Minimum="0" ValueChanged="tval4_ValueChanged" />
+
+                        <Button x:Name="genter" Content="Build" Click="gen_ter_click"  Foreground="White" Width="75"  FontSize="12"/>
+
+
+
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="left" Width="75" Background="#77333333">
+                        <TextBlock Text="BX:" Name="bx" Foreground="Aqua"/>
+                        <TextBlock Text="BZ:" Name="bz" Foreground="Aqua"/>
+                        <TextBlock Text="BA:" Name="ba" Foreground="Aqua"/>
+                        <Slider x:Name="slider1" LargeChange="1" Maximum="4" Minimum="1" ValueChanged="slider_ValueChanged" />
+
+                        <TextBlock Text="Rotate xyz:" Name="protate" Foreground="AliceBlue" FontSize="12"/>
+
+                        <Slider x:Name="sliderrx" LargeChange="1" Maximum="7" Minimum="0" ValueChanged="sliderrx_ValueChanged" />
+                        <Slider x:Name="sliderry" LargeChange="1" Maximum="7" Minimum="0" ValueChanged="sliderry_ValueChanged" />
+                        <Slider x:Name="sliderrz" LargeChange="1" Maximum="7" Minimum="0" ValueChanged="sliderrz_ValueChanged" />
+
+
+                        <TextBlock Text="Path:" Name="ptext" Foreground="AliceBlue" FontSize="12"/>
+
+                        <Slider x:Name="blend_num" LargeChange="1" Maximum="6" Minimum="1" ValueChanged="blend_num_ValueChanged" />
+
+
+                        <Button x:Name="clearpaths" Content="Clear" Click="clear_paths_click" Foreground="White" Width="75" FontSize="12"/>
+                        <Button x:Name="newpath" Content="New" Click="path_new_click"  Foreground="White" Width="75" FontSize="12"/>
+                        <Button x:Name="bakepath" Content="Bake" Click="path_bake_click"  Foreground="White" Width="75"  FontSize="12"/>
+
+                        <CheckBox Content="Loop" Name="loop_but" Foreground="White"   FontSize="12" IsChecked="True"  Checked="loop_check" Unchecked="loop_uncheck"/>
+
+                        <CheckBox Content="Dip" Name="dip_but" Foreground="White"   FontSize="12" IsChecked="True"  Checked="dip_check" Unchecked="dip_uncheck"/>
+                        <Grid Height="10"></Grid>
+
+                        <TextBlock Text="R G B" Foreground="AliceBlue" FontSize="12"/>
+
+                        <Slider x:Name="sliderrr" LargeChange="1" Maximum="255" Minimum="0" ValueChanged="sliderrr_ValueChanged" />
+                        <Slider x:Name="sliderrg" LargeChange="1" Maximum="255" Minimum="0" ValueChanged="sliderrg_ValueChanged" />
+                        <Slider x:Name="sliderrb" LargeChange="1" Maximum="255" Minimum="0" ValueChanged="sliderrb_ValueChanged" />
+
+                        <Border Height="40" Background="Black" Name="col_view" />
+
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Right" Width="150" Background="#77333333">
+
+
+                        <CheckBox Content="Physics" Name="phy_but" Checked="phy_check" Unchecked="phy_uncheck" Foreground="Wheat" />
+                        <CheckBox Content="Randomnes" Name="rand_but" Checked="rand_check" Unchecked="rand_uncheck" Foreground="Wheat" />
+                        <!--
+                <CheckBox Content="Continual" Name="cont_check" Checked="cont_check_Checked" Unchecked="cont_check_Unchecked" Foreground="Wheat" />
+                <CheckBox Content="Grid height" Name="grid_check" Checked="grid_check_Checked" Unchecked="grid_check_Unchecked" Foreground="Wheat" />
+                <CheckBox Content="Free Cam" Name="cam_check" Checked="cam_check_Checked" Unchecked="cam_check_Unchecked" Foreground="Wheat" />
+                <CheckBox Content="Ray" Name="ray_check" Checked="ray_check_Checked" Unchecked="ray_check_Unchecked" Foreground="Wheat"/>
+                <CheckBox Content="Rotate" Name="rotate_check" Checked="rotate_check_Checked" Unchecked="rotate_check_Unchecked" Foreground="Wheat"/>
+                <CheckBox Content="Fix height" Name="fix_height" Checked="fix_height_Checked" Unchecked="fix_height_Unchecked" Foreground="Wheat"/>
+                <CheckBox Content="Player position" Name="player_pos" Checked="player_pos_Checked" Unchecked="player_pos_Unchecked" Foreground="Wheat"/>
+                -->
+                        <ScrollViewer>
+                            <ListView x:Name="items_list" HorizontalAlignment="Center" Width="150" Height="800"  HorizontalContentAlignment="Center"
+                    SelectionMode="Single" Visibility="Visible" SelectionChanged="items_list_SelectionChanged" >
+                                <ListView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <VirtualizingStackPanel Orientation="Vertical"></VirtualizingStackPanel>
+                                    </ItemsPanelTemplate>
+                                </ListView.ItemsPanel>
+
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="ListViewItem">
+                                        <Setter Property="MinHeight" Value="20" />
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+
+                                <ListView.ItemTemplate>
+
+                                    <DataTemplate>
+
+                                        <Grid Height="20" Background="{Binding BackColor}" Width="150" Name="TitleRect">
+                                            <TextBlock TextAlignment="Left" HorizontalAlignment="Left" Text="{Binding Name}" Width="150" FontSize="15" />
+                                        </Grid>
+
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </ScrollViewer>
+                    </StackPanel>
+
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+        <Grid Name="options_hud" Visibility="Collapsed">
+            <Grid Width="300" Height="270" Background="Black" Opacity="0.5"></Grid>
+            <Grid Width="280" Height="250" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" >
+                        <TextBlock Height="60" Text="Level" Width="100" FontSize="45" FontWeight="Bold" Foreground="White"/>
+                        <Image Source="Assets/arow.png" Height="60" Width="60" PointerPressed="Button_Click_dl" RenderTransformOrigin="0.5,0.5" >
+                            <Image.RenderTransform>
+                                <CompositeTransform Rotation="180"/>
+                            </Image.RenderTransform>
+                        </Image>
+                        <!--<Button Height="60" Width="60" Content="" Click="Button_Click_dl" Background="AliceBlue"/>-->
+                        <TextBlock Name="dice_num"  Height="60" Text="1" Width="60"  FontWeight="Bold"  Foreground="White" FontSize="45" TextAlignment="Center"/>
+                        <Image Source="Assets/arow.png" Height="60" Width="60" PointerPressed="Button_Click_dr" ></Image>
+                        <!--<Button Height="60" Width="60" Content="" Click="Button_Click_dr" Background="AliceBlue"/>-->
+                    </StackPanel>
+
+
+                    <Grid Height="20"></Grid>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Height="50" Text="Col" Width="100" FontSize="45" FontWeight="Bold" Foreground="White"/>
+                        <Image Source="Assets/arow.png" Height="60" Width="60" PointerPressed="Button_Click_cl" RenderTransformOrigin="0.5,0.5" >
+                            <Image.RenderTransform>
+                                <CompositeTransform Rotation="180"/>
+                            </Image.RenderTransform>
+                        </Image>
+                        <!--<Button Height="60" Width="60" Content="" Click="Button_Click_cl" Background="AliceBlue"/>-->
+                        <TextBlock Name="dice_tex"  Height="60" Text="1" Width="60"  FontSize="45" FontWeight="Bold" Foreground="White" TextAlignment="Center"/>
+                        <Image Source="Assets/arow.png" Height="60" Width="60" PointerPressed="Button_Click_cr" ></Image>
+                        <!--<Button Height="60" Width="60" Content="" Click="Button_Click_cr" Background="AliceBlue"/>-->
+                    </StackPanel>
+                    <Grid Height="20"></Grid>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Height="50" Text="Felt" Width="100" FontSize="45" FontWeight="Bold" Foreground="White"/>
+                        <Image Source="Assets/arow.png" Height="60" Width="60" PointerPressed="Button_Click_fl" RenderTransformOrigin="0.5,0.5" >
+                            <Image.RenderTransform>
+                                <CompositeTransform Rotation="180"/>
+                            </Image.RenderTransform>
+                        </Image>
+                        <!--<Button Height="60" Width="60" Content="" Click="Button_Click_fl" Background="AliceBlue"/>-->
+                        <TextBlock Name="felt_tex"  Height="60" Text="1" Width="60"  FontSize="45" FontWeight="Bold" Foreground="White" TextAlignment="Center"/>
+                        <Image Source="Assets/arow.png" Height="60" Width="60" PointerPressed="Button_Click_fr" ></Image>
+                        <!--<Button Height="60" Width="60" Content="" Click="Button_Click_fr" Background="AliceBlue"/>-->
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+
+    </SwapChainPanel>
+
+
+</Page>

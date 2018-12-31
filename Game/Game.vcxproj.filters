@@ -1,0 +1,1299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>68cb8e73-5993-4cc5-863c-1fe4832c5f00</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>120675da-52c8-42e7-9a30-208bd6b0fc98</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>56a3df16-0ec1-4e21-b51b-aef1b1906173</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="Common\DirectXHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\StepTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DeviceResources.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClCompile Include="Common\DeviceResources.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClInclude Include="Content\ShaderStructures.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <Filter Include="Assets\LevelBinary">
+      <UniqueIdentifier>{50b91dda-eaa3-4b08-9a66-7e4633df5d57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\LevelInfo">
+      <UniqueIdentifier>{f4186bff-264a-47f3-adfc-4e849933ee66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\MusicTracks">
+      <UniqueIdentifier>{d21666b1-61b2-4cfc-a8b8-10f92de76390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Sounds">
+      <UniqueIdentifier>{1660a20f-eda2-4d60-ab8d-fe19db8ad7eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Textures">
+      <UniqueIdentifier>{7f74ec83-5be8-45c1-94d8-41d4d0e87223}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{45114d8d-7913-4202-ac27-810447889828}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{aa25bd7e-d59c-4408-96e3-ea604e355396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FX">
+      <UniqueIdentifier>{d187e5a5-1f7c-4973-9dcf-2aaae435237c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation">
+      <UniqueIdentifier>{83148cde-71ef-4b38-a044-25c8fe7af6d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Characters">
+      <UniqueIdentifier>{20ad1257-a22d-499a-a4a0-4a8fa90213a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cars">
+      <UniqueIdentifier>{d8e8ed7d-4557-4182-b619-f57ff3dae70d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level">
+      <UniqueIdentifier>{6ef35c80-6150-4de5-bc2b-040b48eab224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\CoModels">
+      <UniqueIdentifier>{953aeaf4-4d7f-43d1-b611-2d8ec2dd5ee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Textures\Ground">
+      <UniqueIdentifier>{8afb3faa-8b03-4971-8246-d6ed728656d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Textures\Skybox">
+      <UniqueIdentifier>{5f23f7a9-43ff-4197-b0e7-1ec6913aa841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShadersDef">
+      <UniqueIdentifier>{a828d716-ac30-461a-b94f-6500f1afa649}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Ground">
+      <UniqueIdentifier>{2e083553-3283-4b1f-8276-9752d2a9f36b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="DirectXPage.xaml.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="MediaReader.cpp" />
+    <ClCompile Include="MediaStreamer.cpp" />
+    <ClCompile Include="Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="PanCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="dirt.cpp">
+      <Filter>FX</Filter>
+    </ClCompile>
+    <ClCompile Include="Fire.cpp">
+      <Filter>FX</Filter>
+    </ClCompile>
+    <ClCompile Include="Grass.cpp">
+      <Filter>FX</Filter>
+    </ClCompile>
+    <ClCompile Include="Rain.cpp">
+      <Filter>FX</Filter>
+    </ClCompile>
+    <ClCompile Include="Snow.cpp">
+      <Filter>FX</Filter>
+    </ClCompile>
+    <ClCompile Include="Sparticle.cpp">
+      <Filter>FX</Filter>
+    </ClCompile>
+    <ClCompile Include="Splash.cpp">
+      <Filter>FX</Filter>
+    </ClCompile>
+    <ClCompile Include="steam.cpp">
+      <Filter>FX</Filter>
+    </ClCompile>
+    <ClCompile Include="AllResources.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Flag.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="FlagNode.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="GameRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Lights.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshMotion.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Sky.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Statics.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Stuff.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicLoader.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicReaderWriter.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DDSTextureLoader.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PerlinNoise.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimChar.cpp">
+      <Filter>Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Bert.cpp">
+      <Filter>Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Buggy.cpp">
+      <Filter>Cars</Filter>
+    </ClCompile>
+    <ClCompile Include="CarRig.cpp">
+      <Filter>Cars</Filter>
+    </ClCompile>
+    <ClCompile Include="MyProfiler.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMain.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="SimplexNoise.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderCube.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Fog.cpp">
+      <Filter>FX</Filter>
+    </ClCompile>
+    <ClCompile Include="skyplaneclass.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderCubeArray.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="CatmullRomPath.cpp">
+      <Filter>FX</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Score.cpp">
+      <Filter>FX</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelEdit.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Water.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainPaths.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraPath.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="OrthoWindowClass.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="DeferredBuffersClass.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTextureArray.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTextureClass.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="DirectXPage.xaml.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="GameUIControl.h" />
+    <ClInclude Include="MediaReader.h" />
+    <ClInclude Include="MediaStreamer.h" />
+    <ClInclude Include="Camera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="PanCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="dirt.h">
+      <Filter>FX</Filter>
+    </ClInclude>
+    <ClInclude Include="Fire.h">
+      <Filter>FX</Filter>
+    </ClInclude>
+    <ClInclude Include="Grass.h">
+      <Filter>FX</Filter>
+    </ClInclude>
+    <ClInclude Include="Rain.h">
+      <Filter>FX</Filter>
+    </ClInclude>
+    <ClInclude Include="Snow.h">
+      <Filter>FX</Filter>
+    </ClInclude>
+    <ClInclude Include="Sparticle.h">
+      <Filter>FX</Filter>
+    </ClInclude>
+    <ClInclude Include="Splash.h">
+      <Filter>FX</Filter>
+    </ClInclude>
+    <ClInclude Include="steam.h">
+      <Filter>FX</Filter>
+    </ClInclude>
+    <ClInclude Include="AllResources.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Flag.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="GameRenderer.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Lights.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshMotion.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Sky.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Statics.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Stuff.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicLoader.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicMath.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicReaderWriter.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicShapes.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DDSTextureLoader.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PerlinNoise.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="animation.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimChar.h">
+      <Filter>Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Bert.h">
+      <Filter>Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Buggy.h">
+      <Filter>Cars</Filter>
+    </ClInclude>
+    <ClInclude Include="CarRig.h">
+      <Filter>Cars</Filter>
+    </ClInclude>
+    <ClInclude Include="MyProfiler.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMain.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="FlagNode.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="SimplexNoise.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderCube.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="ppltasks_extra.h">
+      <Filter>Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Fog.h">
+      <Filter>FX</Filter>
+    </ClInclude>
+    <ClInclude Include="skyplaneclass.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderCubeArray.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="CatmullRomPath.h">
+      <Filter>FX</Filter>
+    </ClInclude>
+    <ClInclude Include="DefGame.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="DefParticle.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="DefPhysics.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="DefShader.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Score.h">
+      <Filter>FX</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelEdit.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Water.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainPaths.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraPath.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="OrthoWindowClass.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="DeferredBuffersClass.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTextureArray.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderPixStructs.h">
+      <Filter>Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderVerStructs.h">
+      <Filter>Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTextureClass.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LevelBinary\1.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\2.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\3.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\4.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\5.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\6.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\7.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\8.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\9.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\10.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Statics1.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Statics2.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Statics3.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Statics4.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Statics5.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Statics6.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Statics7.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Statics8.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Statics9.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Statics10.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Stuff1.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Stuff2.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Stuff3.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Stuff4.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Stuff5.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Stuff6.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Stuff7.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Stuff8.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Stuff9.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\Stuff10.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\arow.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="Assets\arow_big.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="Assets\arow_long.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="Assets\arow_rotate.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="Assets\menu_lines.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Textures\animleaves.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\pathblend12.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\pathblend15.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\pathblend11.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\pathblend14.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\LevelBinary\pathblend16.bmp">
+      <Filter>Assets\LevelBinary</Filter>
+    </Image>
+    <Image Include="Assets\Textures\allgrass.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Game_TemporaryKey.pfx" />
+    <None Include="Package.StoreAssociation.xml" />
+    <None Include="Game_StoreKey.pfx" />
+    <None Include="Assets\game-data.db">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="DirectXPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <MeshContentTask Include="Assets\CoModels\beachball.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\big_disk.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\block.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\block_small.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\box_sci.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\buggy.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\column.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\cp.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\cube_turtle.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\dark_templar_knight.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\dark_templar_knight_good.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\dark_templar_knightB.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\fence_post1.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\fence1.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\fireplace.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\flag-pole.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\gem1.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\gem2.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\gem3.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\gent.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\grass.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\heart.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\lamp_post.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\maple.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\marker.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\Mushroom.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\oil_barrel.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\pin.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\pumpkined.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\star.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\tree.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\trees_0.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\untitled.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\wheel.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\wheel2.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\g_sphere.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\wheel3.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\dark_templar_knightC.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\mikey.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\triss.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\wheel4.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\wheel5.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\mariobox.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\animsanta.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\animtree1.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\trees_0_anim.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\wheel6.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\libreau.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\mario.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\hedge1.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\hedgearch.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\hedge2.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\hedgeround.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\statue1.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\buggy_long.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\Big_Old_House.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Assets\CoModels\lhouse.fbx">
+      <Filter>Assets\CoModels</Filter>
+    </MeshContentTask>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\LevelInfo\0info.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\1.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\2.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\3.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\4.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\5.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\6.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\7.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\8.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\9.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\10.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\11.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\12.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\13.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\14.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\15.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\16.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\17.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\18.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\19.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="Assets\LevelInfo\20.txt">
+      <Filter>Assets\LevelInfo</Filter>
+    </Text>
+    <Text Include="URLs.txt">
+      <Filter>Animation</Filter>
+    </Text>
+    <Text Include="Assets\AllTextures.txt">
+      <Filter>Assets</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\Sounds\dice1.wav">
+      <Filter>Assets\Sounds</Filter>
+    </Media>
+    <Media Include="Assets\Sounds\jumppp11.wav">
+      <Filter>Assets\Sounds</Filter>
+    </Media>
+    <Media Include="Assets\Sounds\jumppp22.wav">
+      <Filter>Assets\Sounds</Filter>
+    </Media>
+    <Media Include="Assets\Sounds\POP.WAV">
+      <Filter>Assets\Sounds</Filter>
+    </Media>
+    <Media Include="Assets\MusicTracks\City_Loop.wma">
+      <Filter>Assets\MusicTracks</Filter>
+    </Media>
+    <Media Include="Assets\Sounds\jumppp11.ogg">
+      <Filter>Assets\Sounds</Filter>
+    </Media>
+    <Media Include="Assets\Sounds\jumppp22.ogg">
+      <Filter>Assets\Sounds</Filter>
+    </Media>
+    <Media Include="Assets\MusicTracks\BehindMe.wma" />
+    <Media Include="Assets\MusicTracks\desert.wma" />
+    <Media Include="Assets\MusicTracks\destoroya.wma" />
+    <Media Include="Assets\MusicTracks\Hydrosphere.wma" />
+    <Media Include="Assets\MusicTracks\level2.wma" />
+    <Media Include="Assets\MusicTracks\rainlevel.wma" />
+    <Media Include="Assets\MusicTracks\wierd.wma" />
+    <Media Include="Assets\MusicTracks\window2.wma" />
+    <Media Include="Assets\MusicTracks\Zander.wma" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageContentTask Include="Assets\Textures\alpha1.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\barrel.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\beachball.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\Box_sci.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\carbody_blue.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\carframe.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\drop.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\fence1.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\fire01.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\fireplace_tex.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\fireplace_uv.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\gemblue.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\gemred.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\gemwhite.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\Granite.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\grass-blades.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Ground\grit_norm.JPG">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\heart.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\knight_d.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\knight_n.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\lamp-glass.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\lamppost.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\mushroomred.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\noise01.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\pin.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\pumpkintex.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\snow.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\spark.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\tree_bark.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\tree_leaves.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\trees_bark_002_col.jpg">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\trees_bark_002_nor.jpg">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\trees_leaves_003_col.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\wheel2.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\woodfloor.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\yell.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\bigrocks_norm.JPG">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\misc_smoke.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\Mickey_Mouse_D.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\Mickey_Mouse_N.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\hedge_diffuse.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\hedge_normal.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\hedgearch_diffuse.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\hedgearch_normal.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\hedgelong_diffuse.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\hedgelong_normal.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\hedgeround_diffuse.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\hedgeround_normal.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\wheel2_n.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\cloud001.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\perturb001.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\DaylightBox.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Ground\green.jpg">
+      <Filter>Assets\Textures\Ground</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Ground\moon2.jpg">
+      <Filter>Assets\Textures\Ground</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Skybox\grimmnight_large.jpg">
+      <Filter>Assets\Textures\Skybox</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\water1.png">
+      <Filter>Assets\Textures\Ground</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\water2.png">
+      <Filter>Assets\Textures\Ground</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\waternorm_1.png">
+      <Filter>Assets\Textures\Ground</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\waternorm_2.png">
+      <Filter>Assets\Textures\Ground</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Ground\browndirt.jpg">
+      <Filter>Assets\Textures\Ground</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\crackedsand_norm.JPG">
+      <Filter>Assets\Textures\Ground</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Skybox\violentdays_large.jpg">
+      <Filter>Assets\Textures\Skybox</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Skybox\stormydays_large.jpg">
+      <Filter>Assets\Textures\Skybox</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\marble.JPG">
+      <Filter>Assets\Textures\Ground</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\marble_norm.JPG">
+      <Filter>Assets\Textures\Ground</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\brownwetdirt.JPG">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\brownwetdirt_n.JPG">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\spot_lm.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\headlamp_lm.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\grass2trans.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\carbody_red.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\snow1.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Ground\gravel.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Ground\moss.jpg">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Ground\rock.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Ground\soilbigstones.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Ground\soilgravel.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Ground\soilrough.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\grasssoft1.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\grasssoft2.png">
+      <Filter>Assets</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\Big_Old_House_C.jpg">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\Big_Old_House_N.jpg">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\Big_Old_House_S.jpg">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\3td_WhiteBrick_02_NRM.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\3td_Stone_08.jpg">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\3td_Stone_08_NRM.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\3td_WhiteBrick_02.jpg">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\door01.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\Textures\door01_NRM.png">
+      <Filter>Assets\Textures</Filter>
+    </ImageContentTask>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="DepthAlphaPixelShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="DepthAlphaVertexShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="DepthPixelShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="DepthVertexShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GroundPixelShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GroundVertexShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShinyPixelShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ShinyVertexShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="SkinDepthPixelShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="SkinDepthVertexShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="SkinPixelShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="SkinVertexShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GlowPixelShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GlowVertexShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="DeferredGroundPixelShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="DeferredGroundVertexShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="DeferredPixelShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="DeferredVertexShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="LightPixelShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="LightVertexShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="PointPixelShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="PointVertexShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="WaterPixelShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="WaterVertexShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="SkyPlaneVertexShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="SkiPixelShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="SkiVertexShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="SkyPlanePixelShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="DefSkinPixelShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="DefSkinVertexShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="DefPointPixelShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="DefPointVertexShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="PointLitPixelShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="PointLitVertexShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="GlassPixelShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="GlassVertexShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="FirePixelShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="FireVertexShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="BlurHPixelShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="BlurHVertexShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="BlurVPixelShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="BlurVVertexShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GlowMapPixelShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GlowMapVertexShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="InsPointPixelShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+    <FxCompile Include="InsPointVertexShader.hlsl">
+      <Filter>ShadersDef</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

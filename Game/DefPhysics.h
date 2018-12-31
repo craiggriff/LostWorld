@@ -1,0 +1,7 @@
+
+#define SHAPE_BOX 0
+#define SHAPE_CYLINDER 1
+#define SHAPE_SPHERE 2
+#define SHAPE_ELLIPSEOID 3
+#define SHAPE_CONVEXHULL 4
+

@@ -1,0 +1,24 @@
+terrain tex1
+terrain tex2
+terrain tex3
+terrain normal1
+terrain normal2
+terrain normal3
+ground steepness blend - 3.0f is about average
+skybox
+music track
+ambient col
+diffuse col
+specular col
+fog col
+dust col
+diffuse direction
+specular power
+ground friction
+ground restitution
+start x
+start z
+start angle
+rain 0-no 1-yes
+snow 0-no 1-yes
+wind x, z, y =  wave height  w = wave length

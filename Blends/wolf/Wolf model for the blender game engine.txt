@@ -1,0 +1,48 @@
+Here is a Wolf model i made with Blender.
+
+1569 polygons
+
+includes following animations:
+
+- walk cycle
+- run cycle
+- sit
+- creep cycles
+- Idle animation
+
+
+Control in Blender Game Engine:
+
+Start the Game Engine : P key
+
+Walk cycle : W key
+
+Run cycle : E key
+
+Creep cycle: R key
+
+Sit animation : Spacebar
+
+
+
+run cycle: http://dennish2010.deviantart.com/art/wolf-runcycle-203487360?q=gallery%3Adennish2010%2F24342707&qo=148
+
+walk cycle: http://dennish2010.deviantart.com/art/wolf-walk-cycle-203012557?q=gallery%3Adennish2010%2F24342707&qo=150
+
+http://www.youtube.com/watch?v=DOox7UoZk_E
+
+http://www.youtube.com/watch?v=cGNicjvLnh0
+
+http://www.youtube.com/watch?v=cGNicjvLnh0
+
+
+
+© DennisH2010
+
+Sketchfab.com: https://sketchfab.com/dennish2010/recent
+
+Verold.com: http://studio.verold.com/users/53199fa416c3570200000603/filter/mine
+
+Blog : http://3dartdh.wordpress.com/
+
+YouTube-Channel: https://www.youtube.com/user/DennisH2010

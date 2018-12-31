@@ -1,0 +1,131 @@
+P3D 0 5
+BaseSeed 1
+BranchGroupName Plant
+BranchingAlg __None__
+StemModel __None__
+Material __None__
+VisRangeEnabled false
+VisRange 0.000000 1.000000
+BranchModelCount 1
+BranchGroupName Branch1
+BranchingAlg Base
+RotAngle 0.000000
+StemModel Tube
+Length 17.500010
+LengthV 0.000000
+LengthOffsetDep CubicSpline
+CPCount 2
+Point 0.000000 1.000000
+Point 1.000000 1.000000
+AxisVariation 0.000000
+AxisResolution 1
+ProfileScaleBase 0.700000
+ProfileScaleCurve CubicSpline
+CPCount 2
+Point 0.000000 0.642857
+Point 1.000000 0.000000
+ProfileResolution 8
+PhototropismCurve CubicSpline
+CPCount 2
+Point 0.000000 0.500000
+Point 1.000000 0.500000
+BaseTexUMode 0
+BaseTexUScale 2.000000
+BaseTexVMode 0
+BaseTexVScale 4.000000
+Material Simple
+BaseColor 0.700000 0.700000 0.700000
+DiffuseTexture tannenrinde.png
+NormalMap __None__
+AuxTexture0 __None__
+AuxTexture1 __None__
+DoubleSided false
+Transparent false
+BillboardMode __None__
+AlphaCtrlEnabled false
+AlphaFadeIn 0.000000
+AlphaFadeOut 0.000000
+VisRangeEnabled false
+VisRange 0.000000 1.000000
+BranchModelCount 1
+BranchGroupName Branch2
+BranchingAlg Std
+Density 5.499998
+DensityV 0.300000
+Multiplicity 1
+RevAngle 1.937315
+RevAngleV 0.430000
+RotAngle 1.570796
+MinOffset 0.200000
+MaxOffset 0.900000
+DeclinationCurve CubicSpline
+CPCount 2
+Point 0.000000 0.535714
+Point 1.000000 0.428571
+DeclinationV 0.070000
+StemModel Tube
+Length 0.700000
+LengthV 0.100000
+LengthOffsetDep CubicSpline
+CPCount 3
+Point 0.000000 0.571429
+Point 0.476562 0.285714
+Point 1.000000 0.071429
+AxisVariation 0.120000
+AxisResolution 2
+ProfileScaleBase 1.000000
+ProfileScaleCurve CubicSpline
+CPCount 2
+Point 0.000000 0.714286
+Point 1.000000 0.000000
+ProfileResolution 3
+PhototropismCurve CubicSpline
+CPCount 2
+Point 0.000000 0.428571
+Point 1.000000 0.750000
+BaseTexUMode 0
+BaseTexUScale 1.000000
+BaseTexVMode 0
+BaseTexVScale 1.000000
+Material Simple
+BaseColor 0.700000 0.700000 0.700000
+DiffuseTexture tannenrinde.png
+NormalMap __None__
+AuxTexture0 __None__
+AuxTexture1 __None__
+DoubleSided false
+Transparent false
+BillboardMode __None__
+AlphaCtrlEnabled false
+AlphaFadeIn 0.000000
+AlphaFadeOut 0.000000
+VisRangeEnabled false
+VisRange 0.000000 1.000000
+BranchModelCount 1
+BranchGroupName Branch3
+BranchingAlg Wings
+RotAngle 0.000000
+StemModel Wings
+WingsAngle 0.000000
+Width 3.000000
+SectionCount 1
+Curvature CubicSpline
+CPCount 2
+Point 0.000000 0.285714
+Point 1.000000 0.500000
+Thickness 10.000000
+Material Simple
+BaseColor 0.700000 0.700000 0.700000
+DiffuseTexture tannenzweigfull.png
+NormalMap __None__
+AuxTexture0 __None__
+AuxTexture1 __None__
+DoubleSided true
+Transparent true
+BillboardMode __None__
+AlphaCtrlEnabled false
+AlphaFadeIn 0.000000
+AlphaFadeOut 0.000000
+VisRangeEnabled false
+VisRange 0.000000 1.000000
+BranchModelCount 0
