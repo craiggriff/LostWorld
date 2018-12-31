@@ -220,7 +220,7 @@ namespace XamlBindingInfo
 
         virtual void Update() override
         {
-            this->Update_(this->GetDataRoot(), this->NOT_PHASED);
+            this->Update_(this->GetDataRoot(), NOT_PHASED);
             this->_isInitialized = true;
         }
     };
@@ -257,7 +257,7 @@ namespace XamlBindingInfo
 
         virtual void Update() override
         {
-            this->Update_(this->GetDataRoot(), this->NOT_PHASED);
+            this->Update_(this->GetDataRoot(), NOT_PHASED);
             this->_isInitialized = true;
         }
     };

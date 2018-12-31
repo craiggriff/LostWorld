@@ -30,124 +30,124 @@ void ::Game::DirectXPage::Connect(int __connectionId, ::Platform::Object^ __targ
 {
     switch (__connectionId)
     {
-    case 2:
+    case 1:
         {
             this->swapChainPanel = safe_cast<::Windows::UI::Xaml::Controls::SwapChainPanel^>(__target);
         }
         break;
-    case 3:
+    case 2:
         {
             this->left_buttons = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
         }
         break;
-    case 4:
+    case 3:
         {
             this->right_buttons = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
         }
         break;
-    case 5:
+    case 4:
         {
             this->char_left_buttons = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
         }
         break;
-    case 6:
+    case 5:
         {
             this->char_right_buttons = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
         }
         break;
-    case 7:
+    case 6:
         {
             this->game_hud = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
         }
         break;
-    case 8:
+    case 7:
         {
             this->game_right_buttons = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
         }
         break;
-    case 9:
+    case 8:
         {
             this->right_editor = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
         }
         break;
-    case 10:
+    case 9:
         {
             this->options_hud = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
         }
         break;
+    case 10:
+        {
+            ::Windows::UI::Xaml::Controls::Image^ element10 = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
+            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(element10))->PointerPressed += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::Button_Click_fl);
+        }
+        break;
     case 11:
         {
-            ::Windows::UI::Xaml::Controls::Image^ element11 = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(element11))->PointerPressed += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::Button_Click_fl);
+            this->felt_tex = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
     case 12:
         {
-            this->felt_tex = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+            ::Windows::UI::Xaml::Controls::Image^ element12 = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
+            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(element12))->PointerPressed += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::Button_Click_fr);
         }
         break;
     case 13:
         {
             ::Windows::UI::Xaml::Controls::Image^ element13 = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(element13))->PointerPressed += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::Button_Click_fr);
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::Button_Click_cl);
         }
         break;
     case 14:
         {
-            ::Windows::UI::Xaml::Controls::Image^ element14 = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(element14))->PointerPressed += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::Button_Click_cl);
+            this->dice_tex = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
     case 15:
         {
-            this->dice_tex = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+            ::Windows::UI::Xaml::Controls::Image^ element15 = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
+            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(element15))->PointerPressed += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::Button_Click_cr);
         }
         break;
     case 16:
         {
             ::Windows::UI::Xaml::Controls::Image^ element16 = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(element16))->PointerPressed += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::Button_Click_cr);
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::Button_Click_dl);
         }
         break;
     case 17:
         {
-            ::Windows::UI::Xaml::Controls::Image^ element17 = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(element17))->PointerPressed += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::Button_Click_dl);
+            this->dice_num = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
     case 18:
         {
-            this->dice_num = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+            ::Windows::UI::Xaml::Controls::Image^ element18 = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
+            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(element18))->PointerPressed += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::Button_Click_dr);
         }
         break;
     case 19:
         {
-            ::Windows::UI::Xaml::Controls::Image^ element19 = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
-            (safe_cast<::Windows::UI::Xaml::Controls::Image^>(element19))->PointerPressed += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::Button_Click_dr);
+            this->right_selector = safe_cast<::Windows::UI::Xaml::Controls::StackPanel^>(__target);
         }
         break;
     case 20:
         {
-            this->right_selector = safe_cast<::Windows::UI::Xaml::Controls::StackPanel^>(__target);
+            this->right_cols = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
         }
         break;
     case 21:
         {
-            this->right_cols = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
-        }
-        break;
-    case 22:
-        {
             this->right_chooser = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
         }
         break;
-    case 23:
+    case 22:
         {
             this->phy_but = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(this->phy_but))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Game::DirectXPage::*)
@@ -156,7 +156,7 @@ void ::Game::DirectXPage::Connect(int __connectionId, ::Platform::Object^ __targ
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::phy_uncheck);
         }
         break;
-    case 24:
+    case 23:
         {
             this->rand_but = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(this->rand_but))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Game::DirectXPage::*)
@@ -165,95 +165,95 @@ void ::Game::DirectXPage::Connect(int __connectionId, ::Platform::Object^ __targ
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::rand_uncheck);
         }
         break;
-    case 25:
+    case 24:
         {
             this->items_list = safe_cast<::Windows::UI::Xaml::Controls::ListView^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::ListView^>(this->items_list))->SelectionChanged += ref new ::Windows::UI::Xaml::Controls::SelectionChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::SelectionChangedEventArgs^))&DirectXPage::items_list_SelectionChanged);
         }
         break;
-    case 27:
+    case 25:
         {
             this->bx = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 28:
+    case 26:
         {
             this->bz = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 29:
+    case 27:
         {
             this->ba = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 30:
+    case 28:
         {
             this->slider1 = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->slider1))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::slider_ValueChanged);
         }
         break;
-    case 31:
+    case 29:
         {
             this->protate = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 32:
+    case 30:
         {
             this->sliderrx = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sliderrx))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sliderrx_ValueChanged);
         }
         break;
-    case 33:
+    case 31:
         {
             this->sliderry = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sliderry))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sliderry_ValueChanged);
         }
         break;
-    case 34:
+    case 32:
         {
             this->sliderrz = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sliderrz))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sliderrz_ValueChanged);
         }
         break;
-    case 35:
+    case 33:
         {
             this->ptext = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 36:
+    case 34:
         {
             this->blend_num = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->blend_num))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::blend_num_ValueChanged);
         }
         break;
-    case 37:
+    case 35:
         {
             this->clearpaths = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->clearpaths))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::clear_paths_click);
         }
         break;
-    case 38:
+    case 36:
         {
             this->newpath = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->newpath))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::path_new_click);
         }
         break;
-    case 39:
+    case 37:
         {
             this->bakepath = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->bakepath))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::path_bake_click);
         }
         break;
-    case 40:
+    case 38:
         {
             this->loop_but = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(this->loop_but))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Game::DirectXPage::*)
@@ -262,7 +262,7 @@ void ::Game::DirectXPage::Connect(int __connectionId, ::Platform::Object^ __targ
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::loop_uncheck);
         }
         break;
-    case 41:
+    case 39:
         {
             this->dip_but = safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::CheckBox^>(this->dip_but))->Checked += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Game::DirectXPage::*)
@@ -271,221 +271,221 @@ void ::Game::DirectXPage::Connect(int __connectionId, ::Platform::Object^ __targ
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::dip_uncheck);
         }
         break;
-    case 42:
+    case 40:
         {
             this->sliderrr = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sliderrr))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sliderrr_ValueChanged);
         }
         break;
-    case 43:
+    case 41:
         {
             this->sliderrg = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sliderrg))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sliderrg_ValueChanged);
         }
         break;
-    case 44:
+    case 42:
         {
             this->sliderrb = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sliderrb))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sliderrb_ValueChanged);
         }
         break;
-    case 45:
+    case 43:
         {
             this->col_view = safe_cast<::Windows::UI::Xaml::Controls::Border^>(__target);
         }
         break;
-    case 46:
+    case 44:
         {
             this->cx = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 47:
+    case 45:
         {
             this->cz = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 48:
+    case 46:
         {
             this->ca = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 49:
+    case 47:
         {
             this->tval1 = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->tval1))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::tval1_ValueChanged);
         }
         break;
-    case 50:
+    case 48:
         {
             this->tval2 = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->tval2))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::tval2_ValueChanged);
         }
         break;
-    case 51:
+    case 49:
         {
             this->tval3 = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->tval3))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::tval3_ValueChanged);
         }
         break;
-    case 52:
+    case 50:
         {
             this->tval4 = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->tval4))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::tval4_ValueChanged);
         }
         break;
-    case 53:
+    case 51:
         {
             this->genter = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->genter))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::gen_ter_click);
         }
         break;
-    case 54:
+    case 52:
         {
             this->sambr = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sambr))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sambr_ValueChanged);
         }
         break;
-    case 55:
+    case 53:
         {
             this->sambg = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sambg))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sambg_ValueChanged);
         }
         break;
-    case 56:
+    case 54:
         {
             this->sambb = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sambb))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sambb_ValueChanged);
         }
         break;
-    case 57:
+    case 55:
         {
             this->sdiffr = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sdiffr))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sdiffr_ValueChanged);
         }
         break;
-    case 58:
+    case 56:
         {
             this->sdiffg = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sdiffg))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sdiffg_ValueChanged);
         }
         break;
-    case 59:
+    case 57:
         {
             this->sdiffb = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sdiffb))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sdiffb_ValueChanged);
         }
         break;
-    case 60:
+    case 58:
         {
             this->sdiffx = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sdiffx))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sdiffx_ValueChanged);
         }
         break;
-    case 61:
+    case 59:
         {
             this->sdiffy = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sdiffy))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sdiffy_ValueChanged);
         }
         break;
-    case 62:
+    case 60:
         {
             this->sdiffz = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sdiffz))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sdiffz_ValueChanged);
         }
         break;
-    case 63:
+    case 61:
         {
             this->sspecr = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sspecr))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sspecr_ValueChanged);
         }
         break;
-    case 64:
+    case 62:
         {
             this->sspecg = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sspecg))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sspecg_ValueChanged);
         }
         break;
-    case 65:
+    case 63:
         {
             this->sspecb = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sspecb))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sspecb_ValueChanged);
         }
         break;
-    case 66:
+    case 64:
         {
             this->sspecpow = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->sspecpow))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&DirectXPage::sspecpow_ValueChanged);
         }
         break;
+    case 65:
+        {
+            ::Windows::UI::Xaml::Controls::Button^ element65 = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
+            (safe_cast<::Windows::UI::Xaml::Controls::Button^>(element65))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Game::DirectXPage::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::col_reset_click);
+        }
+        break;
+    case 66:
+        {
+            ::Windows::UI::Xaml::Controls::Button^ element66 = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
+            (safe_cast<::Windows::UI::Xaml::Controls::Button^>(element66))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Game::DirectXPage::*)
+                (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::col_save_click);
+        }
+        break;
     case 67:
         {
             ::Windows::UI::Xaml::Controls::Button^ element67 = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Button^>(element67))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Game::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::col_reset_click);
+                (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::Button_Click);
         }
         break;
     case 68:
         {
             ::Windows::UI::Xaml::Controls::Button^ element68 = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Button^>(element68))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Game::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::col_save_click);
-        }
-        break;
-    case 69:
-        {
-            ::Windows::UI::Xaml::Controls::Button^ element69 = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
-            (safe_cast<::Windows::UI::Xaml::Controls::Button^>(element69))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Game::DirectXPage::*)
-                (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::Button_Click);
-        }
-        break;
-    case 70:
-        {
-            ::Windows::UI::Xaml::Controls::Button^ element70 = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
-            (safe_cast<::Windows::UI::Xaml::Controls::Button^>(element70))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&DirectXPage::Button_Click_1);
         }
         break;
-    case 71:
+    case 69:
         {
             this->in_car = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->in_car))->PointerPressed += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::in_car_PointerPressed);
         }
         break;
-    case 72:
+    case 70:
         {
             this->total_box = safe_cast<::Windows::UI::Xaml::Controls::Viewbox^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Viewbox^>(this->total_box))->PointerPressed += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_right_PointerReleased);
         }
         break;
-    case 73:
+    case 71:
         {
             this->dice_total = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 74:
+    case 72:
         {
             this->attack_grab = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->attack_grab))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
@@ -494,7 +494,7 @@ void ::Game::DirectXPage::Connect(int __connectionId, ::Platform::Object^ __targ
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::attackn_grab_PointerReleased);
         }
         break;
-    case 75:
+    case 73:
         {
             this->button_jump = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_jump))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
@@ -503,7 +503,7 @@ void ::Game::DirectXPage::Connect(int __connectionId, ::Platform::Object^ __targ
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_jump_PointerReleased);
         }
         break;
-    case 76:
+    case 74:
         {
             this->move_pad = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->move_pad))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
@@ -514,7 +514,7 @@ void ::Game::DirectXPage::Connect(int __connectionId, ::Platform::Object^ __targ
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_move_PointerMoved);
         }
         break;
-    case 77:
+    case 75:
         {
             this->button_right = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_right))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
@@ -523,7 +523,7 @@ void ::Game::DirectXPage::Connect(int __connectionId, ::Platform::Object^ __targ
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_right_PointerReleased);
         }
         break;
-    case 78:
+    case 76:
         {
             this->button_left = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_left))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
@@ -532,7 +532,7 @@ void ::Game::DirectXPage::Connect(int __connectionId, ::Platform::Object^ __targ
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_left_PointerReleased);
         }
         break;
-    case 79:
+    case 77:
         {
             this->button_carsteer = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_carsteer))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
@@ -543,7 +543,7 @@ void ::Game::DirectXPage::Connect(int __connectionId, ::Platform::Object^ __targ
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_carsteer_PointerMove);
         }
         break;
-    case 80:
+    case 78:
         {
             this->button_grab = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_grab))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
@@ -552,7 +552,7 @@ void ::Game::DirectXPage::Connect(int __connectionId, ::Platform::Object^ __targ
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_grab_PointerReleased);
         }
         break;
-    case 81:
+    case 79:
         {
             this->button_up = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_up))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
@@ -563,7 +563,7 @@ void ::Game::DirectXPage::Connect(int __connectionId, ::Platform::Object^ __targ
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_up_PointerMoved);
         }
         break;
-    case 82:
+    case 80:
         {
             this->button_down = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_down))->PointerEntered += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
@@ -572,24 +572,24 @@ void ::Game::DirectXPage::Connect(int __connectionId, ::Platform::Object^ __targ
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_down_PointerReleased);
         }
         break;
-    case 83:
+    case 81:
         {
             this->fps = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 84:
+    case 82:
         {
             this->timer = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
         break;
-    case 85:
+    case 83:
         {
             this->button_menu = safe_cast<::Windows::UI::Xaml::Controls::Image^>(__target);
             (safe_cast<::Windows::UI::Xaml::Controls::Image^>(this->button_menu))->PointerPressed += ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::Game::DirectXPage::*)
                 (::Platform::Object^, ::Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&DirectXPage::button_menu_PointerPressed);
         }
         break;
-    case 86:
+    case 84:
         {
             this->level = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
         }
