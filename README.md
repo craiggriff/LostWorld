@@ -8,7 +8,7 @@ DirectX 11 Experimental
 
 [YouTube Video 3](https://www.youtube.com/watch?v=iSrN0vCj4J8&index=51&list=UUGuj1HCnhu_gp2a4pl8qB1g)
 
-[YouTube Video 4](https://www.youtube.com/watch?v=_S_lrxaYJfA&index=58&list=UUGuj1HCnhu_gp2a4pl8qB1g)
+[YouTube Video 4](https://www.youtube.com/watch?v=_S3vOaz_1B4&t=89s)
 
 ![Screenshot](ReleaseArt/ss8.png)
 
